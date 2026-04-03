@@ -42,8 +42,10 @@ markupsafe==3.0.3
     #   wtforms
 packaging==26.0
     # via gunicorn
-psycopg-binary==3.3.3
+psycopg==3.3.3
     # via day-71-deployment (pyproject.toml)
+psycopg-binary==3.3.3
+    # via psycopg
 python-dotenv==1.2.2
     # via day-71-deployment (pyproject.toml)
 sqlalchemy==2.1.0b1
@@ -52,6 +54,8 @@ sqlalchemy==2.1.0b1
     #   flask-sqlalchemy
 typing-extensions==4.15.0
     # via sqlalchemy
+tzdata==2026.1
+    # via psycopg
 webencodings==0.5.1
     # via bleach
 werkzeug==3.1.6
